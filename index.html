@@ -10,7 +10,7 @@
   <h1>Start My Day</h1>
 
   <label>How are you feeling today?
-    <select id='feelings'>
+    <select id='feelings-drop-down'>
       <option value="">Select One...</option>
       <option value="Feeling Good">Feeling Good</option>
       <option value="Feeling Ok">Feeling Ok</option>
@@ -18,11 +18,15 @@
     </select>
   </label>
 
-  <form id="task-input-form">
+  <form id='task-input-form'>
     <label for='new-task-input'>Add tasks: </label>
-    <input type='text'
+    <input type='text' id='new-input' placeholder='Add task here...'>
+    <input type='submit' value='Submit'>
+  </form>
 
-  </div>
+  <div id='affirmations-container'></div>
+  <div id='tasks-container'></div>
+  <button id='refresh-button' type='button'>Refresh</button>
 
 </body>
 </html>
