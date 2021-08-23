@@ -1,0 +1,25 @@
+  {
+    "affirmations": [
+      {
+        "id": 1,
+        "label": "Feeling Good",
+        "image": "https://www.freepngimg.com/thumb/emoji/65057-emoticon-signal-smiley-thumb-emoji-free-frame.png",
+        "quote": "Feeling good! Today is going to be a really, really good day!"
+      },
+      {
+        "id": 2,
+        "label": "Feeling Ok",
+        "image": "",
+        "quote": ""
+      },
+      {
+        "id": 3,
+        "label": "Not Feeling Good",
+        "image": "",
+        "quote": "I accept myself as I am in this moment."
+      }
+    ]
+  }
+
+  // will need to do a fetch on each id#. Example:
+  // fetch('http://localhost:affirmations/1')
