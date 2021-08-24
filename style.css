@@ -1,0 +1,9 @@
+body {
+  background-image: url('Images/pastel_background_image.jpeg');
+  text-align: center;
+}
+
+#delete-btn {
+  margin-left: 5px;
+}
+

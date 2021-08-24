@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang='en'>
   <head>
     <link rel="stylesheet" href="style.css">
     <title>Start My Day</title>
@@ -9,24 +9,29 @@
   <body>
     <h1>Start My Day</h1>
 
-    <label>How are you feeling today?
+    <p>
+    <label>How are you feeling today?</label>
       <select id='feelings-drop-down'>
         <option value="">Select One...</option>
         <option value="Feeling Good">Feeling Good</option>
         <option value="Feeling Ok">Feeling Ok</option>
         <option value="Not Feeling Good">Not Feeling Good</option>
       </select>
-    </label>
 
     <form id='task-input-form'>
       <label for='new-task-input'>Add tasks: </label>
       <input type='text' id='new-input' placeholder='Add task here...'>
       <input type='submit' value='Submit'>
     </form>
+    </p>
 
     <div id='affirmations-container'></div>
-    <div id='to-do-container'></div>
-    <button id='refresh-button' type='button'>Refresh</button>
 
+    <div id='to-do-container'>
+      <h2>To Do's:</h2>
+      <ul id='to-dos'></ul>
+    </div>
+
+    <button id='refresh-button' type='button'>Refresh</button>
   </body>
 </html>

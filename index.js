@@ -1,39 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => { 
-  // add functions here
+  renderTaskList()
+  refreshButton()
 })
 
-const taskForm = document.querySelector('#task-input-form')
-taskForm.addEventListener('submit', (e) => {
-  e.preventDefault()
-  const toDoContainer = document.querySelector('#to-do-container')
-  const toDoList = document.createElement('ul')
+const renderTaskList = () => {
+  const taskForm = document.querySelector('#task-input-form')
+  taskForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const toDoList = document.querySelector('#to-dos')
 
-  const newToDo = document.createElement('li')
-  newToDo.textContent = document.querySelector('#new-input ').value
+    const newToDo = document.createElement('li')
+    newToDo.textContent = document.querySelector('#new-input').value        
   
-  const toDoButton = document.createElement('button')
-  toDoButton.addEventListener('click', handleDelete)
-  toDoButton.textContent = "X"
+    const toDoButton = document.createElement('button')
+    toDoButton.addEventListener('click', handleDelete)
+    toDoButton.id = 'delete-btn'
+    toDoButton.textContent = "X"
 
-  toDoList.append(newToDo, toDoButton)
-  toDoContainer.append(toDoList)
-})
+    newToDo.append(toDoButton)
+    toDoList.append(newToDo)
+  })
+  taskForm.reset()
+}
 
 function handleDelete(e) {
   e.target.parentNode.remove();
 }
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   const newTask = document.getElementById("new-task-description");
-//   const newListItem = document.createElement("li");
-//   newListItem.textContent = `${listItem} `;
-//   const newButton = document.createElement("button");
-//   newButton.addEventListener("click", handleDelete)
-//   newButton.textContent = "X";
-//   newListItem.appendChild(newButton);
-//   list.append(newListItem);
-//   form.reset();
-// })
+const refreshButton = () => {
+  const refreshButton = document.querySelector('#refresh-button')
+  refreshButton.addEventListener('click', () => {
+    const allLis = document.querySelectorAll('li')
+    allLis.remove()
+  })
+}
 
-// }
+
+
