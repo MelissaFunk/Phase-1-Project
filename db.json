@@ -21,5 +21,3 @@
     ]
   }
 
-  // will need to do a fetch on each id#. Example:
-  // fetch('http://localhost:affirmations/1')
