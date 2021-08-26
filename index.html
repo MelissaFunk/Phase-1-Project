@@ -8,22 +8,22 @@
 
   <body>
     <h1>Start My Day</h1>
+    <div id='feelings-and-tasks'>
+      <label>How are you feeling today?</label>
+        <select id='feelings-drop-down'>
+          <option value="">Select One...</option>
+          <option value="Feeling Good">Feeling Good</option>
+          <option value="Feeling Ok">Feeling Ok</option>
+          <option value="Not Feeling Good">Not Feeling Good</option>
+        </select>
 
-    <p>
-    <label>How are you feeling today?</label>
-      <select id='feelings-drop-down'>
-        <option value="">Select One...</option>
-        <option value="Feeling Good">Feeling Good</option>
-        <option value="Feeling Ok">Feeling Ok</option>
-        <option value="Not Feeling Good">Not Feeling Good</option>
-      </select>
+      <form id='task-input-form'>
+        <label for='new-task-input'>Add tasks: </label>
+        <input type='text' id='new-input' placeholder='Add task here...'>
+        <input type='submit' value='Submit'>
+      </form>
+    </div>
 
-    <form id='task-input-form'>
-      <label for='new-task-input'>Add tasks: </label>
-      <input type='text' id='new-input' placeholder='Add task here...'>
-      <input type='submit' value='Submit'>
-    </form>
-    </p>
 
     <div id='affirmations-container'></div>
 

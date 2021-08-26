@@ -7,3 +7,34 @@ body {
   margin-left: 5px;
 }
 
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-inline-start: 100px;
+  margin-inline-end: 100px;
+  background-color: #FDF2F0;
+}
+
+#feelings-and-tasks {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+  background-color: #FDF2F0;
+}
+
+#quote-id {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  background-color: #FDF2F0;
+}
+
+#to-do-container {
+  padding-top: 1px;
+  padding-bottom: 20px;
+  margin-inline-start: 50px;
+  margin-inline-end: 50px;
+  background-color: #FDF2F0;
+}

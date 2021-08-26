@@ -1,23 +1,23 @@
-  {
-    "affirmations": [
-      {
-        "id": 1,
-        "label": "Feeling Good",
-        "image": "https://www.freepngimg.com/thumb/emoji/65057-emoticon-signal-smiley-thumb-emoji-free-frame.png",
-        "quote": "Feeling good! Today is going to be a really, really good day!"
-      },
-      {
-        "id": 2,
-        "label": "Feeling Ok",
-        "image": "http://cdn.totalsororitymove.com/wp-content/uploads/2015/03/ad20b5b4347a0f35f3f10caec5df7e74.png",
-        "quote": "Sometimes it's okay to feel okay."
-      },
-      {
-        "id": 3,
-        "label": "Not Feeling Good",
-        "image": "https://1.bp.blogspot.com/-9UH0JId3P-M/VzdaJjMqIYI/AAAAAAAAStc/p34EFcGshl0jT926XSL6MMSO4w6wgtdQQCLcB/s1600/sorrowful-emoji.png",
-        "quote": "I accept myself as I am in this moment."
-      }
-    ]
-  }
-
+{
+  "affirmations": [
+    {
+      "id": 1,
+      "label": "Feeling Good",
+      "image": "https://www.freepngimg.com/thumb/emoji/65057-emoticon-signal-smiley-thumb-emoji-free-frame.png",
+      "quote": "Feeling good! Today is going to be a really, really good day!"
+    },
+    {
+      "id": 2,
+      "label": "Feeling Ok",
+      "image": "http://cdn.totalsororitymove.com/wp-content/uploads/2015/03/ad20b5b4347a0f35f3f10caec5df7e74.png",
+      "quote": "Sometimes it's okay to feel okay."
+    },
+    {
+      "id": 3,
+      "label": "Not Feeling Good",
+      "image": "https://1.bp.blogspot.com/-9UH0JId3P-M/VzdaJjMqIYI/AAAAAAAAStc/p34EFcGshl0jT926XSL6MMSO4w6wgtdQQCLcB/s1600/sorrowful-emoji.png",
+      "quote": "I accept myself as I am in this moment."
+    }
+  ],
+  "tasklist": []
+}
