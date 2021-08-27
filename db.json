@@ -19,5 +19,18 @@
       "quote": "I accept myself as I am in this moment."
     }
   ],
-  "tasklist": []
+  "tasklist": [
+    {
+      "content": "Eat Breakfast",
+      "id": 1
+    },
+    {
+      "content": "Shower",
+      "id": 2
+    },
+    {
+      "content": "Excercise",
+      "id": 3
+    }
+  ]
 }

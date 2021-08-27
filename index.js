@@ -29,14 +29,14 @@ const renderTaskList = (task) => {
     const toDoButton = document.createElement('button')
     toDoButton.id = 'delete-btn'
     toDoButton.textContent = "X"
-    toDoButton.addEventListener('click', (e) => handleDelete(e, task))
+    toDoButton.addEventListener('click', (e) => handleDelete(e, task, newToDo))
 
     newToDo.append(toDoButton)
     toDoList.append(newToDo)
 }
 
-const handleDelete = (e, task) => {
-  e.target.parentNode.remove()
+const handleDelete = (e, task, newToDo) => {
+  newToDo.remove()
   fetch(`http://localhost:3000/tasklist/${task.id}`, {
     method: 'DELETE'
   })
@@ -48,16 +48,23 @@ const getTaskList = () => {
   .then(tasks => tasks.forEach(renderTaskList))
 }
 
-// need to use PATCH instead of DELETE
-// https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH
+// I want to delete all the newly created li elements in the json & on the page when I click on a refresh button
 const refreshButton = () => {
   const refreshButton = document.querySelector('#refresh-button')
   refreshButton.addEventListener('click', () => {
-    if (confirm("Are you sure you want to refresh?")) {
-      fetch('http://locathost:3000/tasklist', {
-        method: 'DELETE'
+    // if (confirm("Are you sure you want to refresh?")) {
+    // }
+    const ul = document.querySelector('#to-dos')
+    ul.innerHTML = ''
+
+    let nodes = document.querySelectorAll('li')
+    nodes.forEach((node) => {
+
+      fetch(`http://localhost:3000/tasklist/${node.id}`, {
+       method: 'DELETE'
       })
-    }
+
+    })
   })
 }
 
