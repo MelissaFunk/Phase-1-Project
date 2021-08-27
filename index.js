@@ -29,13 +29,13 @@ const renderTaskList = (task) => {
     const toDoButton = document.createElement('button')
     toDoButton.id = 'delete-btn'
     toDoButton.textContent = "X"
-    toDoButton.addEventListener('click', (e) => handleDelete(e, task, newToDo))
+    toDoButton.addEventListener('click', () => handleDelete(task, newToDo))
 
     newToDo.append(toDoButton)
     toDoList.append(newToDo)
 }
 
-const handleDelete = (e, task, newToDo) => {
+const handleDelete = (task, newToDo) => {
   newToDo.remove()
   fetch(`http://localhost:3000/tasklist/${task.id}`, {
     method: 'DELETE'
@@ -83,7 +83,6 @@ const renderAffirmations = (data) => {
 const initialize = () => {
 getTaskList()
 getAffirmations()
-refreshButton()
 }
 
 initialize()
