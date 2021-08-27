@@ -48,26 +48,6 @@ const getTaskList = () => {
   .then(tasks => tasks.forEach(renderTaskList))
 }
 
-// I want to delete all the newly created li elements in the json & on the page when I click on a refresh button
-const refreshButton = () => {
-  const refreshButton = document.querySelector('#refresh-button')
-  refreshButton.addEventListener('click', () => {
-    // if (confirm("Are you sure you want to refresh?")) {
-    // }
-    const ul = document.querySelector('#to-dos')
-    ul.innerHTML = ''
-
-    let nodes = document.querySelectorAll('li')
-    nodes.forEach((node) => {
-
-      fetch(`http://localhost:3000/tasklist/${node.id}`, {
-       method: 'DELETE'
-      })
-
-    })
-  })
-}
-
 const getAffirmations = () => {
 fetch('http://localhost:3000/affirmations')
 .then(res => res.json())

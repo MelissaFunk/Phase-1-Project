@@ -1,6 +1,8 @@
 body {
-  background-image: url('Images/pastel_background_image.jpeg');
+  background-image: url('https://i.pinimg.com/originals/d2/46/b6/d246b6f01f37fde30166109377927596.jpg');
   text-align: center;
+  height: 100%;
+  width: 100%
 }
 
 #delete-btn {
@@ -10,31 +12,49 @@ body {
 h1 {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-inline-start: 100px;
-  margin-inline-end: 100px;
-  background-color: #FDF2F0;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #DE83CF;
 }
 
 #feelings-and-tasks {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-inline-start: 70px;
-  margin-inline-end: 70px;
-  background-color: #FDF2F0;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #F8DAE2;
+}
+
+#task-input-form {
+  padding-top: 10px;
+}
+
+img {
+  padding-top: 20px;
+  max-width: 200px;
+  max-height: auto;
 }
 
 #quote-id {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-inline-start: 50px;
-  margin-inline-end: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #FDF2F0;
 }
 
 #to-do-container {
-  padding-top: 1px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  margin-inline-start: 50px;
-  margin-inline-end: 50px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #FDF2F0;
 }
